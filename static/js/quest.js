@@ -105,7 +105,7 @@ $(function () {
                               </div>
                               <div>
                                 <div>
-                                  ${pokestopName}
+                                <a href='/?lat=${data.latitude}&lon=${data.longitude}&zoom=30'>${pokestopName}</a>
                                 </div>
                                 <div>
                                   <a href='javascript:void(0);' onclick='javascript:openMapDirections(${data.latitude},${data.longitude},"${Store.get('mapServiceProvider')}");' title='${i18n('Open in')} ${mapServiceProviderNames[Store.get('mapServiceProvider')]}'><i class="fas fa-map-marked-alt"></i> ${data.latitude.toFixed(5)}, ${data.longitude.toFixed(5)}</a>
